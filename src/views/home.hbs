@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style-home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6d7e492aec.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="/images/ug_ico.png" type="images/x-icon">
+    <title>LaTeXWord</title>
+</head>
+<body>
+    <header>
+        <div class="logo-tex">
+            <img src="/images/logo_ug.jpg" width="90" alt="Universidad de Guayaquil">
+            <h1>LaTeXWord</h1>
+        </div>
+    </header>
+    <main>
+        <aside class="barra-lateral">
+            <ul>
+                <li><a href= {{ urlIndex }}><i class="fa-solid fa-house"></i>Inicio</a></li>
+                <li><a href="/"><i class="fa-solid fa-user"></i>Perfil</a></li>
+                <li><a href="/"><i class="fa-solid fa-clipboard"></i>Recomendaciones</a></li>
+                <li><a href="/"><i class="fa-solid fa-circle-question"></i>Guia</a></li>
+                <li><a href="/"><i class="fa-solid fa-address-book"></i>Contactos</a></li>
+                <li><a href="/"><i class="fa-solid fa-circle-info"></i>Acerca de</a></li>
+                <li><a href="/"><i class="fa-solid fa-right-from-bracket"></i>Cerrar sesión</a></li>
+            </ul>
+
+        </aside>
+        <article class="menu-conversion">
+            <form action="/upload" id="formulario" method="POST" enctype="multipart/form-data">
+                <input type="file" id="file" name="file" accept=".tex, .docx, .zip">
+                <div class="div-label"><label for="file" id="lbltext">SELECCIONAR ARCHIVO</label></div>
+                <p class="permitidos">Archivos permitidos: word (.docx), latex (.tex), zip (.zip)</p>
+            </form>
+            <div id="ventana-convertir" class="ventana-convertir">
+                <h2 id="title-text"></h2>
+                <p id="file-text"></p>
+                <div id="change-load" class="convertir">
+                    <div id="convertir"></div>
+                    <div id="descargar"></div>
+                    <a id="regresar" href= {{ urlHome }}>Aceptar</a>
+                </div>
+            </div>
+            <div id="loading"><div></div>
+        </article>        
+    </main>
+    <input type="checkbox" id="btn-modal">
+    <div class="ventana-modal">
+        <div class="content-modal">
+            <h2>
+                Solicitud Rechazada
+            </h2>
+            <p id="msg-alert"></p>
+            <div class="btn-cerrar">
+                <label for="btn-modal" id="aceptar" class="lbl-cerrar">Cerrar</label>
+                <label id="cancelar" class="cancelar">No</a>
+            </div>
+        </div>
+        <label id="cerrar-modal" for="btn-modal" class="cerrar-modal"></label>
+    </div>
+    <script src="/scripts/processFile.js"></script>
+</body>
+</html>

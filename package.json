@@ -1,0 +1,31 @@
+{
+  "name": "latexword",
+  "version": "1.0.0",
+  "description": "Sistema de conversion de archivos latex y word",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/app.js",
+    "start": "node src/app.js"
+  },
+  "keywords": [],
+  "author": "Mauricio Idrovo M.",
+  "license": "ISC",
+  "dependencies": {
+    "adm-zip": "^0.5.10",
+    "bcrypt": "^5.1.1",
+    "cheerio": "^1.0.0-rc.12",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "fs-extra": "^11.2.0",
+    "hbs": "^4.2.0",
+    "js-beautify": "^1.15.1",
+    "multer": "^1.4.5-lts.1",
+    "pg": "^8.11.3",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.37.1",
+    "yauzl-promise": "^4.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}

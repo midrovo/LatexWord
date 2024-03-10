@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style-login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+    <link rel="icon" href="/images/ug_ico.png" type="images/x-icon">
+    <title>LaTeXWord</title>
+</head>
+<body>
+    <div class="contenedor">
+        <header>
+            <div class="logo-tex">
+                <img src="/images/logo_ug.jpg" width="250" alt="Univeridad de Guayaquil">
+                <h1>LaTeXWord</h1>
+            </div>
+        </header>
+        <main>
+            <form method="POST" id="formulario" class="formulario">
+                <h1>Registrarse</h1>
+                <div class="contenedor-input">
+                    <div>
+                        <input type="text" id="txtname" maxlength="20" name="name" required></input>
+                        <label for="txtname">Nombres</label>
+                    </div>
+                    <div>
+                        <input type="text" id="txtlastname" maxlength="20" name="lastname" required></input>
+                        <label for="txtlastname">Apellidos</label>
+                    </div>
+                    <div>
+                        <input type="text" id="txtuser" maxlength="15" name="username" required></input>
+                        <label for="txtuser">Nombre de usuario</label>
+                    </div>
+                    <div>
+                        <input type="email" id="txtemail" maxlength="30" name="email" required></input>
+                        <label for="txtemail" class="lblemail">Correo electronico</label>
+                    </div>
+                    <div>
+                        <input type="password" id="txtpassword" maxlength="15" name="password" required>
+                        <label for="txtpassword" class="lblpassword">Contraseña</label>
+                    </div>
+                </div>
+                <button type="submit">ACEPTAR</button>
+            </form>
+        </main>
+    </div>
+    <script src="/scripts/register.js"></script>
+</body>
+</html>

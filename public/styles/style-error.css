@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Crimson Text', serif;
+    text-decoration: none;  
+    color: black;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+body header {
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+body main {
+    min-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+header aside {
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header .title {
+    padding-top: 30px;
+}
+
+header aside h1 {
+    font-size:72px;
+    color: #4d82bc;
+}
+
+header aside p {
+    text-align: center;
+    font-size: 32px;
+    max-width: 500px;
+}
+
+main div {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    min-height: 500px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+main div h1 {
+    font-size: 62px;
+    font-weight: bold;
+}
+
+#ugpng {
+    border-radius: 150px;
+}
+
+aside div {
+    display: flex;
+    justify-content: center;
+    background-color: #ff6f00;
+}
+
+div a {
+    font-weight: bold;
+    color: #ffff;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 22px;
+}
+
+div a:hover {
+    transition: all 0.75s;
+    background-color: #4d82bc;
+  }
+
+div h1 {
+    color: #4d82bc;
+    padding-bottom: 20px;
+}
